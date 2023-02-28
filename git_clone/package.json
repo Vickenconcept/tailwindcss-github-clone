@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "formidable": "^2.1.1",
+    "upper-case": "^2.0.2"
+  },
+
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}

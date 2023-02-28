@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>TAILWIND JIT TUTORIAL</title>
+  </head>
+  <body>
+    <!-- navbar starts here -->
+    <nav class="bg-gray-900 px-7 py-3 w-full flex-row flex">
+      <div class="w-2/3 flex flex-row max-md:justify-between">
+        <span class="text-white text-xl font-semibold xl:hidden">&#9776;</span>
+        <span class="mr-4 max-md:mr-10">
+          <img
+            src="./dist/img/git.png"
+            alt="Vickenconcept"
+            class="border border-red-100 rounded-full w-8 h-8"
+          />
+        </span>
+        <ul class="flex flex-row justify-between w-4/5 max-md:hidden">
+          <input
+            type="text"
+            placeholder="search or jump to..."
+            class="bg-transparent px-11 border text-sm text-slate-300 border-slate-500 rounded-md"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="20"
+            aria-hidden="true"
+            class="mr-1 header-search-key-slash"
+          >
+            <path
+              fill="none"
+              stroke="#979A9C"
+              opacity=".4"
+              d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"
+            ></path>
+            <path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path>
+          </svg>
+          <li>
+            <a href="#" class="text-white font-semibold text-sm"
+              >Pull request</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-white font-semibold text-sm">Issues</a>
+          </li>
+          <li>
+            <a href="#" class="text-white font-semibold text-sm">Codespaces</a>
+          </li>
+          <li>
+            <a href="#" class="text-white font-semibold text-sm">Marketplace</a>
+          </li>
+          <li>
+            <a href="#" class="text-white font-semibold text-sm">Explore</a>
+          </li>
+        </ul>
+      </div>
+      <div class="w-1/3 flex flex-row justify-end mr-4">
+        <span class="">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 stroke-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+              />
+            </svg>
+          </a>
+        </span>
+        <span class="ml-2 max-md:hidden">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 stroke-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 4.5v15m7.5-7.5h-15"
+              />
+            </svg>
+          </a>
+        </span>
+        <span class="ml-2 max-md:hidden">
+          <a href="#">
+            <img
+              src="https://avatars.githubusercontent.com/u/111221295?s=40&amp;v=4"
+              alt="@Vickenconcept"
+              class="border border-red-100 rounded-full w-5 h-5"
+            />
+          </a>
+        </span>
+      </div>
+    </nav>
+    <!-- nav ends here// main begins -->
+    <main>
+      <!-- header regin starts -->
+      <section class="bg-gray-100 py-5 px-8 max-md:px-5">
+        <div class="grid grid-cols-2 max-md:grid-cols-1 mb-6">
+          <div class="max-md:w-full">
+            <svg
+              aria-hidden="true"
+              height="16"
+              viewBox="0 0 16 16"
+              version="1.1"
+              width="16"
+              data-view-component="true"
+              class="inline-block mr-2"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 011-1h8zM5 12.25v3.25a.25.25 0 00.4.2l1.45-1.087a.25.25 0 01.3 0L8.6 15.7a.25.25 0 00.4-.2v-3.25a.25.25 0 00-.25-.25h-3.5a.25.25 0 00-.25.25z"
+              ></path>
+            </svg>
+            <a
+              href="#"
+              class="inline-block text-blue-600 text-xl hover:underline"
+              >tailwindlabs</a
+            ><span class=""> /</span>
+            <a
+              href="#"
+              class="inline-block text-blue-600 text-xl font-semibold hover:underline"
+              >tailwindcss-forms</a
+            >
+            <span class="text-sm mr-1 border rounded-full border-gray-300 px-1"
+              >Public</span
+            >
+          </div>
+          <div class="max-md:hidden" id="dataCollect"></div>
+        </div>
+        <div class="max-md:hidden" id="addMore"></div>
+      </section>
+      <!-- header ends here// main article starts -->
+      <section class=" grid  grid-cols-4 w-full">
+        <!-- right region of the article begins -->
+        <div class="  col-span-3 py-5 px-8 ">
+            <div class="sm:grid-rows-1 flex justify-between">
+                <div id="master">
+                </div>
+                <div id="master2">
+                </div>
+            </div>
+            <div class="border border-gray-200 rounded-md my-5">
+                <div class="flex flex-row justify-between bg-gray-100 p-4 border border-gray-200 border-b">
+                    <div class="w-3/5 text-gray-800">
+                        <a class="avatar avatar-user">
+                            <img data-test-selector="commits-avatar-stack-avatar-image" src="https://avatars.githubusercontent.com/u/1834413?s=48&amp;v=4" width="24" height="24" alt="@RobinMalfait" class=" inline-block border rounded-full">
+                        </a>
+                        <a href="#" class="font-semibold hover:underline text-sm">RobinMalfait</a>
+                        <a href="#" class="text-sm hover:text-blue-600 hover:underline">manually resolve the opacity variable</a>
+                        <span class="text-sm">(<a href="#" class=" hover:text-blue-600 text-blue-600 hover:underline">#132</a>)</span>
+                    </div>
+                    <div class="w-2/5 pl-5">
+                        <a class="text-sm hover:text-blue-600 text-gray-600" href="/tailwindlabs/tailwindcss-forms/commit/615a228c4893002ddf93ef5334b1bdca42af47c5" anchor="comments" data-pjax="#repo-content-pjax-container" data-turbo-frame="repo-content-turbo-frame">
+                            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="inline-block stroke-gray-400 hover:stroke-blue-500">
+                      <path fill-rule="evenodd" d="M2.75 2.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25H2.75zM1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.457 1.457 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"></path>
+                  </svg>
+                            1
+                          </a>
+                          <svg aria-label="2 / 2 checks OK" role="img" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="inline-block stroke-green-600 cursor-pointer mr-2">
+                            <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+                        </svg>
+                        <a href="#" class=" text-sm hover:text-blue-600 text-gray-600 hover:underline mr-2">615a228</a>
+                        <a href="#" class=" text-sm hover:text-blue-600 text-gray-600 hover:underline mr-2">last month</a>
+                        <a href="/tailwindlabs/tailwindcss-forms/commits/master" class="text-gray-600 hover:text-blue-600 hover:underline hover:stroke-blue-600">
+                            <svg text="gray" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="inline-block stroke-gray-400 hover:stroke-blue-500">
+                        <path fill-rule="evenodd" d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"></path>
+                    </svg>
+                                        <span class="font-semibold text-sm text-gray-600 hover:text-blue-600">120</span>
+                                        <span class="text-gray-600 text-sm hover:text-blue-600">
+                                    commits
+                                  </span>
+                                </a>
+                    </div>
+                </div>
+                <div class=" " id="getDatafill">
+                </div>
+            </div>
+        </div>
+         <!-- right region of the article ends// left region begins -->
+        <div class=" sm:grid-rows-1 col-span-1 p-6 border-b max-md:hidden ">
+          <h2 class="font-semibold">About</h2>
+          <span>
+            <svg
+              aria-hidden="true"
+              height="16"
+              viewBox="0 0 16 16"
+              version="1.1"
+              width="16"
+              data-view-component="true"
+              class="inline-block flex-shrink-0 mr-2"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"
+              ></path>
+            </svg>
+          </span>
+          <a
+            href="#"
+            class="text-blue-600 font-semibold text-sm hover:underline"
+            >tailwindcss-forms.vercel.app</a
+          >
+          <div class=" border-b py-4" id="side_sec1">
+        </div>
+        <div class="py-6 border-b">
+          <a href="#" class="font-semibold hover:text-blue-500 gray text-gray-800 ">Release <span class="bg-gray-200 text-[12px] px-1 border rounded-xl font-semibold">19</span></a>
+          <div class="">
+            <div class="cursor:pointer hover:text-blue-500">
+              <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="inline-block mr-1 stroke-green-300 hover:stroke-blue-500">
+                <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path>
+            </svg>
+            <a href="#" class="font-semibold hover:text-blue-500">v0.5.3</a><span class="text-[12px] border rounded-xl border-green-700 px-2 font-semibold text-green-700">Latest</span>
+            <a href="#" class="font-light hover:text-blue-500 text-[12px] block">on Sep 2,2002</a>
+            </div>
+          <a href="#" class="font-normal hover:underline text-blue-500 text-sm block mt-4 ">+ 18 releases</a>
+          </div>
+        </div>
+        <div class="py-6 border-b">
+          <a href="#" class="font-semibold hover:text-blue-500">Packages</a>
+          <p class="text-sm mt-4">No packages published</p>
+        </div>
+        <div class="py-2 border-b">
+          <a href="#" class="font-semibold hover:text-blue-500 gray text-gray-800 ">Used by <span class="bg-gray-200 text-[12px] px-1 border rounded-xl  hover:text-gray-700 gray font-semibold">3.5m</span></a>
+          <div class="mt-3 grid grid-cols-3 py-7">
+            <a href="#" class="col-span-2 w-7/8 h-4 relative">
+              <ul class="inline-block " style="white-space: wrap;">
+                <li class="inline-block"><img class="border-2 absolute ml-[0px] rounded-full border-white " src="https://avatars.githubusercontent.com/u/96079205?s=64&amp;v=4" width="32" height="32" alt="@MrBoats21"></li>
+                <li class="inline-block"><img class="border-2 absolute ml-[20px] rounded-full border-white " src="https://avatars.githubusercontent.com/u/50436511?s=64&amp;v=4" width="32" height="32" alt="@GilbertHG"></li>
+                <li class="inline-block"><img class="border-2 absolute ml-[40px] rounded-full border-white " src="https://avatars.githubusercontent.com/u/50436511?s=64&amp;v=4" width="32" height="32" alt="@GilbertHG"></li>
+                <li class="inline-block"><img class="border-2 absolute ml-[60px] rounded-full border-white " src="https://avatars.githubusercontent.com/u/50436511?s=64&amp;v=4" width="32" height="32" alt="@GilbertHG"></li>
+                <li class="inline-block"><img class="border-2 absolute ml-[80px] rounded-full border-white " src="https://avatars.githubusercontent.com/u/50436511?s=64&amp;v=4" width="32" height="32" alt="@GilbertHG"></li>
+                <li class="inline-block"><img class="border-2 absolute ml-[100px] rounded-full border-white " src="https://avatars.githubusercontent.com/u/50436511?s=64&amp;v=4" width="32" height="32" alt="@GilbertHG"></li>
+                <li class="inline-block"><img class="border-2 absolute ml-[120px] rounded-full border-white " src="https://avatars.githubusercontent.com/u/50436511?s=64&amp;v=4" width="32" height="32" alt="@GilbertHG"></li>
+              </ul>
+            </a>
+            <a href="#" class="font-normal hover:underline text-blue-500 text-sm ml-1 col-span-1 w-1/8 pt-5 h-4  ">+ 3,477,266</a>
+          </div>
+
+        </div>
+        <div class="py-6 border-b">
+          <a href="#" class="font-semibold hover:text-blue-500 gray text-gray-800 ">Contributors<span class="bg-gray-200 text-[12px] px-1 border rounded-xl font-semibold">262</span></a>
+          <div class="mt-3 grid grid-rows-2">
+            <a href="#" class="">
+              <ul class="inline-block ">
+                <li class="inline-block"><img class="border-2 rounded-full border-white " src="https://avatars.githubusercontent.com/u/96079205?s=64&amp;v=4" width="32" height="32" alt="@MrBoats21"></li>
+                <li class="inline-block"><img class="border-2 rounded-full border-white " src="https://avatars.githubusercontent.com/u/50436511?s=64&amp;v=4" width="32" height="32" alt="@GilbertHG"></li>
+                <li class="inline-block"><img class="border-2 rounded-full border-white " src="https://avatars.githubusercontent.com/u/50436511?s=64&amp;v=4" width="32" height="32" alt="@GilbertHG"></li>
+                <li class="inline-block"><img class="border-2 rounded-full border-white " src="https://avatars.githubusercontent.com/u/50436511?s=64&amp;v=4" width="32" height="32" alt="@GilbertHG"></li>
+                <li class="inline-block"><img class="border-2 rounded-full border-white " src="https://avatars.githubusercontent.com/u/50436511?s=64&amp;v=4" width="32" height="32" alt="@GilbertHG"></li>
+                <li class="inline-block"><img class="border-2 rounded-full border-white " src="https://avatars.githubusercontent.com/u/50436511?s=64&amp;v=4" width="32" height="32" alt="@GilbertHG"></li>
+                <li class="inline-block"><img class="border-2 rounded-full border-white " src="https://avatars.githubusercontent.com/u/50436511?s=64&amp;v=4" width="32" height="32" alt="@GilbertHG"></li>
+                <li class="inline-block"><img class="border-2 rounded-full border-white " src="https://avatars.githubusercontent.com/u/50436511?s=64&amp;v=4" width="32" height="32" alt="@GilbertHG"></li>
+                <li class="inline-block"><img class="border-2 rounded-full border-white " src="https://avatars.githubusercontent.com/u/50436511?s=64&amp;v=4" width="32" height="32" alt="@GilbertHG"></li>
+                <li class="inline-block"><img class="border-2 rounded-full border-white " src="https://avatars.githubusercontent.com/u/50436511?s=64&amp;v=4" width="32" height="32" alt="@GilbertHG"></li>
+                <li class="inline-block"><img class="border-2 rounded-full border-white " src="https://avatars.githubusercontent.com/u/50436511?s=64&amp;v=4" width="32" height="32" alt="@GilbertHG"></li>
+              </ul>
+            </a>
+            <a href="#" class="font-normal hover:underline text-blue-500 text-sm ml-1 mt-3 ">+ 251 contributors</a>
+          </div>
+        </div>
+        <div class="py-6 border-b">
+          <p class="font-semibold">Languages</p>
+          <p class="text-sm mt-4 p-1 bg-orange-700 border rounded-xl w-full"></p>
+        </div>
+        </div>
+         <!-- left region of the article ends -->
+      </section>
+    </main>
+ <script src="./src/index.js"></script>
+ <script>
+  function addNum(num) {
+      let num = num
+  }
+  add
+ </script>
+  </body>
+</html>
